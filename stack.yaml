@@ -1,10 +1,9 @@
 resolver: lts-10.1
-flags: {}
-packages:
-- haskoin-core
-- haskoin-node
-- haskoin-wallet
 extra-deps:
+- git: https://github.com/haskoin/haskoin-core.git
+  commit: 3279f5c83026fe25e8761213de7e0cdcc6e2bd0e
+  subdirs:
+    - haskoin-core
 - daemons-0.2.1
 - pbkdf-1.1.1.1
 - murmur3-1.0.3
